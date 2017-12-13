@@ -24,13 +24,19 @@ class GuiseppesMenu
     menu_prices
   end
 
+  def get_all_names
+    @menu.search("name")
+  end
+
+  def get_all_calories
+    @menu.search("calories")
+  end
+
   def get_all_food_items
-    names = @menu.search("name", "calories")
-    calories = @menu.search("calories")
-    p names
+    @menu.search("breakfast_menu")
   end
 
 end
 
 x = GuiseppesMenu.new
-# p x.get_menu_prices
+# p x.get_all_food_items
