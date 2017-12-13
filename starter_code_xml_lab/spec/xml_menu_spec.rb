@@ -30,6 +30,7 @@ describe "XML menu" do
       if i.element_children[0].text.include? 'Waffles'
         expect(i.element_children[2].text).to include 'Two'
       end
+    end
   end
 
 end
