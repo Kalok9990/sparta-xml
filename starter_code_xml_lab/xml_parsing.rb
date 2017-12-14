@@ -33,7 +33,7 @@ class GuiseppesMenu
   end
 
   def get_all_food_items
-    @menu.search("breakfast_menu")
+    @menu.search("food")
   end
 
 end
